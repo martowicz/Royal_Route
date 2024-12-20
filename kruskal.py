@@ -20,11 +20,11 @@ def union(x,y):
             y.rank+=1
 
 
-def kruskal_MST(G): #graf w postaci listy krawędzi
+def kruskal_MST(N,G): #graf w postaci listy krawędzi
     G.sort(key=lambda edge: edge[2]) #F=sorted(G, key=lambda egde: egde[2])
     #G.reverse()
     MST=[]
-    nodes=[Kruskal_Node(i) for i in range(len(G))]
+    nodes=[Kruskal_Node(i) for i in range(N+1)]
     for x,y,w in G:
         #Jeśli dodatkowa krawędź z tymi co już są nie tworzy cyklu, to ją dodaję
         if find(nodes[x]) != find(nodes[y]):
