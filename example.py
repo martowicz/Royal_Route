@@ -9,7 +9,7 @@ Opis algorytmu: Poniżej zaimplementowałem aglorytm dynamiczny obliczający mak
 1. Najpierw z podanego grafu tworzę MST, przy pomocy algorytmu kruskala. Krawędzie w takim drzewie to będą jedyne jakie potrzebuję.
 2. Obliczone wcześniej drzewo ukorzeniam w jakimś punkcie, w moim algorytmie przyjąłem że jest to wierzchołek 1, ponieważ zakładam że graf ma co
 najmniej jeden weirzchołek.
-3. Od teraz wierzchołki są reprezentowane ajko obiekty klasy Vertex. Vertex posiada informację o rodzicu w drzewie, o dzieciach, o sąsiadach
+3. Od teraz wierzchołki są reprezentowane jako obiekty klasy Vertex. Vertex posiada informację o rodzicu w drzewie, o dzieciach, o sąsiadach
 wraz z wagami krawędzi do nich, o poziomie w drzewie (korzeń ma poziom 0). Zawiera także informację o tym jaki jest dotychczasowy maksymalny wynik
 dla podrzewa znajdującego się nie wyżej niż ten wierzchołek (algorytm dynamiczny).
 4. Wykorzystuję algorytm bfs do przeanalizowania drzewa
